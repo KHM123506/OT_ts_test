@@ -1,6 +1,7 @@
 pip>=23.1
 setuptools>=68.0
 wheel
+python-dotenv
 aiogram==2.25.2
 aiohttp==3.8.6
 gspread==5.12.4
