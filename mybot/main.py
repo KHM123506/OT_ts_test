@@ -11,8 +11,8 @@ storage = MemoryStorage()
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot, storage=storage)
 
-import mybot.handlers.user
-import mybot.handlers.menu
+# === Handlers-аа ЭНД импортолно ===
+from mybot.handlers import user, menu
 
 # Flask сервер
 app = Flask(__name__)
