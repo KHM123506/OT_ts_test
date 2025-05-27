@@ -13,7 +13,6 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 # mybot/handlers/user.py
 from mybot.main import dp
 
-from mybot import dp
 from services.registration import is_telegram_id_registered, get_register_number_by_telegram_id
 from sheets.employees import find_employee_register_row, register_employee_telegram_id
 from sheets.attendance import add_register, add_checkin, add_checkout
