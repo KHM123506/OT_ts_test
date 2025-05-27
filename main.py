@@ -5,9 +5,11 @@ from config import API_TOKEN
 
 import asyncio
 from aiogram import Bot, Dispatcher, executor, types
+from aiogram.contrib.fsm_storage.memory import MemoryStorage
 
+storage = MemoryStorage()
 bot = Bot(token=API_TOKEN)
-dp = Dispatcher(bot)
+dp = Dispatcher(bot, storage=storage)  # ЗӨВХӨН ингэж нэг удаа үүсгэнэ!
 
 # Bot handler-ууд энд
 @dp.message_handler(commands=['start'])
