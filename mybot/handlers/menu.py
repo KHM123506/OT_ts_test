@@ -26,7 +26,7 @@ async def send_menu(message: types.Message, state: FSMContext):
 # ==== /help ====
 
 from aiogram import types
-from mybot import dp  # Таны dispatcher импортолсон байх ёстой
+from mybot.main import dp  # Таны dispatcher импортолсон байх ёстой
 
 @dp.message_handler(commands=['help'])
 async def send_help(message: types.Message):
