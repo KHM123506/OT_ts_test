@@ -11,11 +11,6 @@ storage = MemoryStorage()
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot, storage=storage)  # ЗӨВХӨН ингэж нэг удаа үүсгэнэ!
 
-# Bot handler-ууд энд
-@dp.message_handler(commands=['start'])
-async def start_handler(message: types.Message):
-    await message.reply("Бот ажиллаж байна!")
-
 import mybot.handlers.user
 import mybot.handlers.menu
 
