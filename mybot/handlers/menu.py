@@ -2,7 +2,7 @@ from aiogram import types
 from aiogram.dispatcher.filters import Command
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 from aiogram.dispatcher import FSMContext
-from mybot import dp
+from mybot.main import dp
 
 # --- Keyboard ---
 menu_keyboard = ReplyKeyboardMarkup(
