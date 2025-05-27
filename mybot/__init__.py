@@ -1,1 +1,1 @@
-from main import dp
+from .main import dp
